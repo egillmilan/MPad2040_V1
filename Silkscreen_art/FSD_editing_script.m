@@ -6,7 +6,7 @@ clc; clear all; close all;
 %     imwrite(imgFSD,'saturn' + string(i) + '_e.bmp', 'bmp');
 % end
 
-img = imread('saturn/saturn20.jpg');
-imgFSD = FloydSteinbergDots(img-2, 4);
+img = imread('saturn/saturn16.jpg');
+imgFSD = FloydSteinbergDots(img-5, 20);
 figure; imshow(imgFSD);
-imwrite(imgFSD,'saturn20_e.bmp', 'bmp');
+imwrite(imgFSD,'saturn16_e_small.bmp', 'bmp');
